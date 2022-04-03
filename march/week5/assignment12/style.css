@@ -1,0 +1,54 @@
+.container{
+    width: 150vh;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 100px 1fr 100px;
+}
+h1{
+    grid-column: 1 /span 3;
+    align-self: center;
+}
+.header{ 
+    grid-column: 4 / span 4;
+    background-color: aqua;
+    opacity: 0.9;
+    align-self: center;
+    border-radius: 20px;
+   padding-left: 40px;
+
+}
+ul{
+    display:block;
+    padding: 10px;
+}
+li{
+    display: inline;
+    padding: 20px;
+}
+li:hover ul{
+    display: block;
+    position: absolute;
+}
+li>ul{
+    display: none;
+}
+.image{
+    padding: 30px;
+    grid-column: 5 / span 2;
+    grid-row: 2 /span 3;
+    
+}
+input{
+    margin: 30px;
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 3;
+    background-color: burlywood;
+}
+.footer{
+    grid-row: 3 / span 1;
+    background-color: black;
+    color: white;
+    height: 100px;
+    align-self: center;
+}
